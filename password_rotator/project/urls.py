@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^export_passwords/', include('export_passwords.urls'))
+    url(r'^export_passwords/', include('export_passwords.urls')),
+    url(r'^notification/', include('notification.urls'))
 ]
